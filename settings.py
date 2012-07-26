@@ -14,7 +14,7 @@ BACKUP = False
 SITE_ROOT = "/"
 SITE_WWW_URL = "http://connormendenhall.com"
 SITE_NAME = "Connor Mendenhall"
-SITE_AUTHOR = "Connor Mendenhall"
+SITE_AUTHOR = "ECM"
 
 #URL Configuration
 GENERATE_ABSOLUTE_FS_URLS = False
@@ -32,8 +32,8 @@ GENERATE_CLEAN_URLS = True
 
 # A list of filenames (without extensions) that will be considered listing
 # pages for their enclosing folders.
-LISTING_PAGE_NAMES = ['index']
-#LISTING_PAGE_NAMES = ['listing', 'index', 'default']
+#LISTING_PAGE_NAMES = ['index']
+LISTING_PAGE_NAMES = ['listing']
 
 # Determines whether or not to append a trailing slash to generated urls when
 # clean urls are enabled.

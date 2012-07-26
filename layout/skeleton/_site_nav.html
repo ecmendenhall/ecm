@@ -1,0 +1,17 @@
+{% extends "skeleton/_root.html" %}
+
+{% block all %}
+
+<div>
+    <ul class="nav nav-list">
+        {% for module in site.children %}
+			<li{% ifequal page.module module %} class="selected" {% endifequal %}>
+				<a href="{{module.listing_url}}">
+					{{module.name|unslugify}}
+				</a>
+			</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

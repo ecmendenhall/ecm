@@ -1,0 +1,63 @@
+{% extends "skeleton/_root.html" %}
+
+{% block all %}
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<title>
+			{% block title %}
+			{{site.name}} : {{page.title}}
+			{% endblock %}
+		</title>
+
+		{% block feeds %}
+
+		<link href="{{site.url}}/blog/atom.xml" rel="alternate" title="{{site.name}}" type="application/atom+xml"/>
+
+		{% endblock %}
+
+		{% block css %}
+
+		<link rel="stylesheet" href="{{site.url}}/media/css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="{{site.url}}/media/css/font-awesome.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="{{site.url}}/media/css/custom.css" type="text/css" charste="utf-8">
+
+		    {% block extra_css %}
+		    {% endblock %}
+		
+		{% endblock %}
+		
+		{% block js %}
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+
+		{% block extra_js %}
+		{% endblock %}
+		
+		{% endblock %}
+
+	</head>
+
+	<body>
+		<div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span2">
+                {% include "skeleton/_sidebar.html" %}
+                </div>
+                <div class="span10">
+                {% block content %}{% endblock %}
+                </div>
+		    </div>	
+		</div>
+
+	</body>
+
+</html>
+
+{% endblock %}

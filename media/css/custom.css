@@ -1,0 +1,13 @@
+.container-fluid {
+    margin-top:60px;
+}
+
+.sidebar-nav-fixed {
+     position:fixed;
+     top:60px;
+     width:140px;
+}
+
+.condensed {
+    line-height: 24px;
+}

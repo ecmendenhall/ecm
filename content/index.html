@@ -1,23 +1,17 @@
 {% extends "skeleton/_body.html" %}
 
 {%hyde
-    title: "Connor Mendenhall"
+    title: ""
     created: 2009-02-01 18:09:05
     listing: True
 %}
 
 {% block content_body %}
+{% markdown %}
+The vehicle explodes, literally explodes, off the pad. The simulator shakes you a little bit, but the actual liftoff shakes your entire body and soul.
 
-<h2>Recent Posts</h2>
+Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
 
-	{%recent_posts recents 5 %}
-
-	<ul>
-		{%for post in recents %}
-			<li>
-				<a href='{{post.url}}'>{{post.title}}</a>
-			</li>
-		{%endfor%}
-	</ul>
-
+First, I believe that this nation should commit itself to achieving the goal, before this decade is out, of landing a man on the moon and returning him safely to the earth. No single space project in this period will be more impressive to mankind, or more important for the long-range exploration of space; and none will be so difficult or expensive to accomplish.
+{% endmarkdown %}
 {%endblock%}
