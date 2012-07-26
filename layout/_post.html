@@ -24,8 +24,8 @@
     <span class="post-date">{{ page.created|date:"D d M Y"}}</span>
 </div>
 
+{% block breadcrumbs %}
+{% include "skeleton/_breadcrumbs.html"%}
 {% endblock %}
 
-{% block context_nav %}
-{% include "skeleton/_context_nav.html" %}
 {% endblock %}
