@@ -1,17 +1,13 @@
-{% extends "_post.html" %}
-
-{% hyde
-    title: "Kicksaver"
-    snip: "Rescue Kickstarter projects ending soon."
-    created: 2012-04-29 01:25:20
-    exclude: False
-%}
-
-{% block article %}
-{% markdown %}
+---
+title: Kicksaver
+description: >
+    Rescue Kickstarter projects ending soon.
+created: !!timestamp '2012-04-29 01:25:20'
+tags:
+    - programming
+github: https://github.com/ecmendenhall/Kicksaver
+---
 
 E.C. Mendenhall made Kicksaver to help out struggling Kickstarter projects and practice working with Google App Engine and AJAX. It parses the Ending Soon and Small Projects categories a few times a day to find projects ending soon. This means it won't always be completely up to date, but it should be close.
 
 The backend is written in Python. It uses BeautifulSoup to parse Kickstarter projects, and Tweepy to update the Twitter feed. The frontend uses JQuery for asynchronous updates and CSS styles from Bootstrap. This project is a totally non-commercial thing not affiliated with Kickstarter in any way. All the code for this project is available on GitHub under an MIT license.
-{% endmarkdown %}
-{% endblock %}

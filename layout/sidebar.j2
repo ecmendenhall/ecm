@@ -1,0 +1,29 @@
+<div class="sidebar-nav sidebar-nav-fixed">
+    <div>
+        <img class="framed" src="{{ media_url('images/head.jpg') }}">
+    </div>
+    <div>
+        <p>
+            <h1 class="condensed"><a href="{{base_url}}/">Connor Mendenhall</a></h1>
+        </p>
+    </div>
+    <div class="contact">
+        <p>
+            <div>
+                <i class="icon-twitter"></i> <a href="https://twitter.com/ecmendenhall">@ecmendenhall</a>
+            </div>
+            <div>
+                <i class="icon-envelope"></i> <a href="mailto:e@cmendenhall.com">e@cmendenhall.com</a>
+            </div>
+            <div>
+                <i class="icon-phone"></i> +1 520.762.6286
+            </div>
+        </p>
+    </div>
+
+    {% block nav %}
+        {% from "macros.j2" import render_nav with context %}
+        {{ render_nav(menu, 'main_nav') }}
+    {% endblock %}
+</div>
+

@@ -1,0 +1,12 @@
+{% extends "base.j2" %}
+
+{% block main %}
+<div class="overlap"><h1>{{ node.title }}</h1></div>
+    <div class="framed">
+        <div class="content">
+        {% block content_body %}
+        {% endblock content_body %}
+        </div>
+    </div>
+</div>
+{% endblock main %}
