@@ -2,14 +2,27 @@
 {% from "macros.j2" import render_excerpt with context  %}
 
 {% block main %}
-<div class="overlap"><h1>{{ node.title }}</h1></div>
+<div class="overlap"><h1>{{ resource.meta.heading }}</h1></div>
     <div class="framed">
         <div class="content">
-            <ul class="listing clear">
+            <h3>Programming</h3>
+            <ul class="unstyled">
             {% for res in resource.node.walk_resources_sorted_by_time() %}
+            {% if res.meta.listable %}
+            {% if 'programming' in res.meta.tags %}
                 <li>
-                {{ render_excerpt(res) }}
+                <span>
+                {% if res.meta.github %}
+                    <a href="{{res.meta.github}}"><i class="icon-github"></i></a>
+                {% endif %}
+                <strong>
+                <a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a>
+                </strong>
+                {{ res.meta.description }}
+                </span>
                 </li>
+            {% endif %}
+            {% endif %}
             {% endfor %}
             </ul>
         </div>

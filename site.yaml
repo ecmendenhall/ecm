@@ -23,14 +23,14 @@ context:
                 name: Resume
                 description: Resume
                 css_class: resume
-                type: node
-                url: resume
+                type: page
+                url: resume.html
             -
                 name: Writing
                 description: Writing
                 css_class: writing
-                type: note
-                url: writing
+                type: page
+                url: writing.html
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2012-07-26 18:17:00
