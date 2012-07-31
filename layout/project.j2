@@ -1,0 +1,19 @@
+{% extends "body.j2" %}
+
+
+{% block nav %}
+<p>
+<a href="{{ resource.node.url }}">
+{{ node.name|capitalize }}
+</a> >
+<a href="{{ resource.node.url}}">
+{{ resource.meta.tags[0]|capitalize }}
+</a> >
+<a href="{{ resource.url }}">
+{{ resource.meta.heading }}
+</a>
+</p>
+{% endblock nav %}
+
+{% block content_body -%}
+{%- endblock content_body %}

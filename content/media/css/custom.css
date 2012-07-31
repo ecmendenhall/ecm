@@ -5,8 +5,18 @@
 .sidebar-nav-fixed {
      position:fixed;
      top:30px;
-     width:150px;
+     width:160px;
+     font-family: 'Futura';
+     font-size: 110%;
 }
+
+
+@media (max-width: 762px) {
+     .sidebar-nav-fixed {
+         position:static;
+        width: auto;
+     }
+ }
 
 .condensed {
     line-height: 26px;
@@ -35,14 +45,9 @@
     padding-right: 20px;
 }
 
-.resume > ul {
-    list-style: none;
-}
-
 .page-listing {
     list-style: none;
 }
-
 
 .footer {
     font-size: 70%;
@@ -57,9 +62,38 @@
     opacity: 1;
 }
 
+.nav > li:hover {
+  opacity: 0.7;
+}
+
+.nav > li > a:hover {
+  opacity: 1;
+}
+
 h1, h2 { 
-    font-family: 'Sansita One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lobster', 'Sansita One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #0088cc;
  }
 
-body { background-color: #f5f5f5; }
+h3 {
+    font-family: 'Futura';
+    font-weight: lighter;
+}
+
+body {
+    background-image: url('/media/images/cork3.png'); 
+    background-color: #f5f5f5;
+    font-family: 'Helvetica Neue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.content > ul {
+    list-style: none;
+}
+
+strong {
+    font-size: 110%;
+}
+
+i {
+    font-style: normal;
+}

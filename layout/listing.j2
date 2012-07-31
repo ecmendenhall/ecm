@@ -5,6 +5,7 @@
 <div class="overlap"><h1>{{ resource.meta.heading }}</h1></div>
     <div class="framed">
         <div class="content">
+            <div>
             <h3>Programming</h3>
             <ul class="unstyled">
             {% for res in resource.node.walk_resources_sorted_by_time() %}
@@ -25,7 +26,32 @@
             {% endif %}
             {% endfor %}
             </ul>
+            </div>
+            <div>
+            <h3>Policy</h3>
+            <ul class="unstyled">
+            {% for res in resource.node.walk_resources_sorted_by_time() %}
+            {% if res.meta.listable %}
+            {% if 'policy' in res.meta.tags %}
+                <li>
+                <span>
+                {% if res.meta.github %}
+                    <a href="{{res.meta.github}}"><i class="icon-github"></i></a>
+                {% endif %}
+                <strong>
+                <a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a>
+                </strong>
+                {{ res.meta.description }}
+                </span>
+                </li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            </ul>
+            </div>
         </div>
     </div>
 </div>
 {% endblock main %}
+
+

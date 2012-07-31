@@ -4,6 +4,8 @@
 <div class="overlap"><h1>{{ resource.meta.heading }}</h1></div>
     <div class="framed">
         <div class="content">
+        {% block nav %}
+        {% endblock nav %}
         {% filter markdown|typogrify -%}
         {% block content_body %}
         {% endblock content_body %}

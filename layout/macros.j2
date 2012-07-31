@@ -1,7 +1,6 @@
 {% macro render_nav(menu, cls=None) -%}
 {% if menu -%}
-<nav {{'class='~cls if cls }}>
-    <ul>
+    <ul class="nav nav-list">
         {% for item in menu -%}
         {% set active = False -%}
         {% if item.type == 'page' -%}
@@ -11,10 +10,7 @@
             {% set active = (node ==
                 site.content.node_from_relative_path(item.url)) -%}
         {%- endif %}
-        {% set classes = ['button', 'white'] -%}
-        {% do classes.append('active') if active -%}
-        {% do classes.append(item.css_class) if item.css_class -%}
-        <li>
+        <li {% if active %}class="active"{% endif %}>
             <a title="{{ item.description }}"
                 class="{{ classes|join(' ') }}"
                 href="{{ content_url(item.url) }}">
@@ -23,6 +19,5 @@
         </li>
         {%- endfor %}
     </ul>
-</nav>
 {%- endif %}
 {%- endmacro %}

@@ -2070,6 +2070,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover {
   text-decoration: none;
   background-color: #eeeeee;
+  opacity: 0.8;
 }
 .nav > .pull-right {
   float: right;
