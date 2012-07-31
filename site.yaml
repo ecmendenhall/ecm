@@ -53,3 +53,8 @@ tagger:
             archive_extension: html
             meta:
                 listable: false
+publisher:
+        github:
+            type: hyde.ext.publishers.dvcs.Git
+            path: /Users/connormendenhall/Python/ecm/
+            url: git@github.com:ecmendenhall/ecmendenhall.github.com.git
