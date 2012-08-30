@@ -42,10 +42,21 @@
   <link rel="stylesheet" href="/media/css/custom.css" type="text/css">
   
   
-    <!-- All JavaScript at the bottom, except for Modernizr which
-        enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
-    </head>
+      <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33980183-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+      </head>
 <body id="whatgd">
   <div class="container-fluid">
             <div class="row-fluid">
@@ -110,7 +121,10 @@ Programming
 What.gd
 </a>
 </p>
-        <p>Tabminder is a simple Chrome extension designed to make me more mindful of browsing distracting sites. I use StayFocusd to manage the total time I waste online, but I wanted a tool to remind to spend my daily quotas wisely and help prevent distracted browsing from going too far in the first place. Tabminder prevents quick visits to Reddit, Twitter, and Hacker News from turning into work-sucking time vortexes by providing a gentle reminder every few minutes. Open a distracting tab, and Tabminder starts counting down from your preset time limit. When time&#8217;s up, it will prompt you to close the tab or restart the timer. This is just annoying enough to intercept distracted browsing, but not so strict that it prevents you from taking a break once in a while. (You deserve it,&nbsp;right?)</p>        </div>
+        <p><img alt="What.gd" src="/media/images/whatgd.png" /></p>
+<p><strong><a href="http://what.gd">Project</a></strong> | <strong><a href="https://github.com/ecmendenhall/What-Good">Source</a></strong></p>
+<p><strong>Tools <span class="amp">&amp;</span> Skills:</strong> Python, Django,&nbsp;git</p>
+<p>What.gd was my first serious Python application, my first Django project, and the first time I used version control. It was inspired by Kevin Kelly&#8217;s It was inspired by Benjamin Franklin&#8217;s <a href="http://flowingdata.com/2011/03/20/daily-schedule-of-benjamin-franklin/">daily questions</a> and Kevin Kelly&#8217;s <a href="http://kk.org/ct2/2007/09/my-life-countdown-1.php">life countdown</a>.</p>        </div>
     </div>
 </div>
         </div>
@@ -135,6 +149,5 @@ What.gd
     <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
   <![endif]-->
 
-      
   </body>
 </html>

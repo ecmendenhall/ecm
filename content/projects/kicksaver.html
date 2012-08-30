@@ -12,7 +12,18 @@ github: https://github.com/ecmendenhall/Kicksaver
 listable: true
 ---
 
-E.C. Mendenhall made Kicksaver to help out struggling Kickstarter projects and practice working with Google App Engine and AJAX. It parses the Ending Soon and Small Projects categories a few times a day to find projects ending soon. This means it won't always be completely up to date, but it should be close.
+![Kicksaver]({{ media_url('images/kicksaver.png') }})
+#[Kicksaver](http://www.kicksaver.net) [Source](https://github.com/ecmendenhall/Kicksaver)
+__Tools & skills:__ Python, Google App Engine, memcached, AJAX, JQuery, BeautifulSoup, Tweepy, Twitter Bootstrap
 
-The backend is written in Python. It uses BeautifulSoup to parse Kickstarter projects, and Tweepy to update the Twitter feed. The frontend uses JQuery for asynchronous updates and CSS styles from Bootstrap. This project is a totally non-commercial thing not affiliated with Kickstarter in any way. All the code for this project is available on GitHub under an MIT license.
+After watching a few friends freak out about meeting their funding goals in the last few hours of their Kickstarter campaigns, I made this simple web application to help find and save struggling Kickstarter projects. Kicksaver crawls and curates the Ending Soon and Small Projects categories on Kickstarter a few times a day to find projects that will close soon. 
 
+The backend is written in Python using the Google App Engine webapp2 framework. It uses BeautifulSoup to parse Kickstarter projects, and Tweepy to publish endangered projects to Twitter a few times each day. The frontend uses JQuery for asynchronous updates and CSS styles from Twitter Bootstrap.
+
+Kicksaver was featured on [The Verge][verge], [MetaFilter][mefi], [Pando Daily][pando], [The Daily Dot][ddot], and [Gizmodo France][gizmodo].
+
+[verge]:http://www.theverge.com/2012/5/8/3006980/kicksaver-fund-endangered-kickstarter-projects
+[mefi]:http://www.metafilter.com/116910/No-Links-to-Kickstarter-Projects
+[pando]:http://pandodaily.com/2012/05/07/kicksaver-lets-you-be-someones-last-minute-funding-hero/
+[ddot]:http://www.dailydot.com/society/kickstarter-kicksaver-ec-mendenhall/
+[gizmodo]:http://www.gizmodo.fr/2012/05/11/kicksaver-site-qui-sauve-projets-kickstarter.html

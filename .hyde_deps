@@ -71,6 +71,8 @@
 !!python/unicode 'portfolio/index.html': [base.j2, macros.j2, sidebar.j2, analytics.j2]
 !!python/unicode 'projects/chalk.html': [body.j2, sidebar.j2, analytics.j2, project.j2,
   base.j2, macros.j2]
+!!python/unicode 'projects/cmendenhall.html': [body.j2, sidebar.j2, analytics.j2,
+  project.j2, base.j2, macros.j2]
 !!python/unicode 'projects/davedavefind.html': [body.j2, sidebar.j2, analytics.j2,
   project.j2, base.j2, macros.j2]
 !!python/unicode 'projects/fees.html': [body.j2, sidebar.j2, analytics.j2, project.j2,

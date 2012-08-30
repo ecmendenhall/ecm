@@ -47,12 +47,13 @@
   {% endblock css %}
 
   {% block headjs %}
-  <!-- All JavaScript at the bottom, except for Modernizr which
-        enables HTML5 elements & feature detects -->
-    <script src="{{ media_url('js/libs/modernizr-1.7.min.js') }}"></script>
+  <script src="{{ media_url('js/libs/modernizr-1.7.min.js') }}"></script>
   {% endblock headjs %}
+  {% block analytics %}
+  {% include "analytics.j2" %}
+  {% endblock analytics %}
   {% block endhead %}{% endblock endhead %}
-</head>
+  </head>
 <body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
   <div class="container-fluid">
       {% block container %}
@@ -90,10 +91,6 @@
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
   <![endif]-->
-
-  {% block analytics %}
-  {% include "analytics.j2" %}
-  {% endblock analytics %}
 
   {% endblock js %}
 </body>
